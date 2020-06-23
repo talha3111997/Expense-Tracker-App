@@ -3,6 +3,7 @@ import Footer from './Footer';
 import './App.css';
 import BalanceContext from './BalanceContext'
 import Result from './Result'
+import BalanceTitle from './Balance_Title'
 function App(props) {
   let balance = useState(0)
   return (
@@ -10,6 +11,7 @@ function App(props) {
     <div className="App">
       <header className="App-header">
         <h2>Expense Tracker</h2>
+        <BalanceTitle></BalanceTitle>
         <Result></Result>
        <h3>History</h3>
        <hr></hr>
