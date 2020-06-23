@@ -15,7 +15,7 @@ useEffect(() => {
   return (
       
     <div  className="Balance">
-        <h3 >Your Balance : {balance[0]} </h3> <br></br>
+        <h3 >Your Balance : ${balance[0]} </h3> <br></br>
         
     </div>
   );

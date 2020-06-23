@@ -14,10 +14,15 @@ console.log(balance);
    
         
         <div className="Result">
-        
-       <p className="Income"> Income <br></br> +$0.00</p>
+        <div>
+        <h4>Income </h4>
+       <p className="Income"> +$0.00</p>
+       </div>
        <hr></hr>
-        <p className="Expense" > Expense <br></br> +$0.00 </p>
+       <div>
+        <h4> Expense  </h4>
+        <p className="Expense"> +$0.00 </p>
+        </div>
         </div>
     
   );
