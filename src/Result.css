@@ -1,0 +1,17 @@
+.Result{
+display: flex;
+flex-direction: row;
+background-color: rgb(255, 255, 255);
+
+}
+
+.Income{
+    color: green;
+    margin: 20px
+}
+
+.Expense{
+    color: red;
+    margin: 20px;
+
+}
