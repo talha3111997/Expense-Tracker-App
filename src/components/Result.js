@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 
 
-import BalanceContext from './BalanceContext';
-import './Result.css';
+import BalanceContext from '../context/BalanceContext';
+import '../Result.css';
 
 
 function Result() {
   
 let balance = useContext(BalanceContext);
-console.log(balance);
+//console.log(balance);
   return (
       
    

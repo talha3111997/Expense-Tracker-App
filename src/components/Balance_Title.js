@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 
 
-import BalanceContext from './BalanceContext';
+import BalanceContext from '../context/BalanceContext';
 
 
 
