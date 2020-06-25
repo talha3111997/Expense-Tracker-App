@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 
+import {GlobalContext} from '../context/GlobalState'
 
 import BalanceContext from '../context/BalanceContext';
 import '../Result.css';
@@ -8,7 +9,14 @@ import '../Result.css';
 function Result() {
   
 let balance = useContext(BalanceContext);
-//console.log(balance);
+let {transactions} = useContext(GlobalContext)
+const amounts = transactions.map(transaction =>   transaction.cost)
+
+const income = amounts.filter(item=>item>0).reduce((acc,item) => (acc += item),0).toFixed(2);
+
+
+const expense = amounts.filter(item=>item<0).reduce((acc,item) => (acc += item),0).toFixed(2);
+
   return (
       
    
@@ -16,12 +24,12 @@ let balance = useContext(BalanceContext);
         <div className="Result">
         <div>
         <h4>Income </h4>
-       <p className="Income"> +$0.00</p>
+       <p className="Income"> {income}</p>
        </div>
        <hr></hr>
        <div>
         <h4> Expense  </h4>
-        <p className="Expense"> +$0.00 </p>
+        <p className="Expense"> {expense} </p>
         </div>
         </div>
     
