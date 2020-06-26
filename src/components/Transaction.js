@@ -15,7 +15,7 @@ export const Transaction = ({transaction}) => {
     return (
         
             <li className={class_sign}>
-            {sign}${Math.abs(transaction.cost)} <span> {transaction.name} </span><button onClick={()=>deleteTransaction(transaction.id)} className="delete-btn">X</button>
+            {sign}${Math.abs(transaction.cost)} <span className='trans_name'>  {transaction.name} </span><button className="delete-btn" onClick={()=>deleteTransaction(transaction.id)} >X</button>
               </li>
         
     )

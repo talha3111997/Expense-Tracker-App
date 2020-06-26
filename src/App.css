@@ -85,13 +85,18 @@ h4 {
 }
 
 .money {
-  font-size: 20px;
+  font-size: 40px;
   letter-spacing: 1px;
   margin: 5px 0;
 }
+.trans_name{
+  margin-left: 20px;
+}
+
 
 .money.plus {
   color: #2ecc71;
+  
 }
 
 .money.minus {
@@ -100,7 +105,7 @@ h4 {
 
 label {
   display: inline-block;
-  margin: 10px 0;
+  margin: 10px;
 }
 
 input[type='text'],
@@ -110,7 +115,7 @@ input[type='number'] {
   display: block;
   font-size: 16px;
   padding: 10px;
-  width: 80%;
+  min-width: 280px;
 }
 
 .btn {
@@ -123,7 +128,7 @@ input[type='number'] {
   font-size: 16px;
   margin: 20px 0 30px;
   padding: 10px;
-  width: 100%;
+  min-width: 100%;
   border-radius: 50px;
 }
 
@@ -136,6 +141,7 @@ input[type='number'] {
   list-style-type: none;
   padding: 0;
   margin-bottom: 40px;
+ 
 }
 
 .list li {
@@ -146,7 +152,9 @@ input[type='number'] {
   justify-content: space-between;
   position: relative;
   padding: 10px;
-  margin: 10px 0;
+  margin-left: 20px;
+  min-width: 300px;
+  margin-bottom: 10px;
 }
 
 .list li.plus {
@@ -162,11 +170,11 @@ input[type='number'] {
   background-color: #ff2007;
   border: 0;
   color: #fff;
-  font-size: 20px;
+  font-size: 10px;
   line-height: 20px;
   padding: 2px 5px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 0;
   transform: translate(-100%, -50%);
   opacity: 0;

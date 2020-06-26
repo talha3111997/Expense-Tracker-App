@@ -7,9 +7,11 @@ function BalanceTitle() {
   
 //let balance = useContext(BalanceContext);
 let {transactions} = useContext(GlobalContext)
+transactions = Array.from(transactions)
 const amounts = transactions.map(transaction =>   transaction.cost)
 console.log(amounts)
-const balance = amounts.reduce((acc,item) => (acc += item),0).toFixed(2);
+console.log("type of transactions" ,typeof(transactions))
+const balance = amounts.reduce((acc,item) => (acc += item),0);
 
 useEffect(() => {
     // Update the document title using the browser API
@@ -18,7 +20,7 @@ useEffect(() => {
   return (
       
     <div  className="Balance">
-        <h3 >Your Balance : <br/> <strong>${balance}</strong>  </h3> <br></br>
+        <h3 >Your Balance : <br/> <strong className="money">${balance}</strong>  </h3> <br></br>
         
     </div>
   );
