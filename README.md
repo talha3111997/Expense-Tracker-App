@@ -1,5 +1,5 @@
 # Live Demo: (Deployed on surge)
-http://expense_tracker_app_talha3111997.surge.sh/
+Click this link to see: http://expense_tracker_app_talha3111997.surge.sh/
 
 
 
